@@ -1,13 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 
+function Logo() {
+  return (
+    <img src={logo} className="App-logo" alt="logo" />
+  )
+}
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="gesundheits-container">
+      <header id="gesundheits-header" className="gesundheits-header">
+        <Logo />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -18,6 +24,16 @@ function App() {
           Learn React
         </a>
       </header>
+      <div id="gesundheits-content" className="gesundheits-contentpusher-container">
+        <div className="gesundheits-contenpusher">
+          <div className="content">
+            <h1>
+              Ernährung + Fitness<br />
+              in Düsseldorf und Umgebung
+            </h1>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
